@@ -92,12 +92,13 @@ a:hover {
   color: var(--ac-colour);
 }
 
-a#active-cell {
+a:focus {
+  outline: none;
   color: var(--ac-colour);
   text-decoration: underline;
 }
 
-tr#active-row td.title {
+tr:focus-within td.title {
   border-right: 2px solid var(--ac-colour);
 }
 
